@@ -10,7 +10,7 @@ services:
       - web
     volumes:
       - ./apps/usr-share-nginx-html:/usr/share/nginx/html
-      - ./owasp-modsecurity-crs:/usr/local/owasp-modsecurity-crs
+      - ./conf/owasp-modsecurity-crs:/usr/local/owasp-modsecurity-crs
       - ./conf/modsec:/etc/nginx/modsec
 
   php:
